@@ -7,6 +7,8 @@ Um teste vocacional interativo para ajudar calouros e iniciantes em Ciência da 
 
 🌐 **[Acessar o Teste Vocacional](https://lucasdoreac.github.io/teste-vocacional-computacao/)**
 
+📊 **[Guia Financeiro e Ético para Carreiras em Computação](https://lucasdoreac.github.io/guia-financeiro-etico-computacao/)** - Informações sobre salários, oportunidades e considerações éticas em cada área.
+
 ![Preview do Teste Vocacional](images/code-paths.svg)
 
 ## 🎯 Objetivo
@@ -17,6 +19,7 @@ Este projeto foi criado para ajudar estudantes de Ciência da Computação, espe
 - Conhecer tecnologias atualizadas (2025) para cada área
 - Encontrar recursos gratuitos para aprendizado
 - Identificar projetos práticos para começar
+- Aprender sobre aspectos financeiros e éticos da carreira
 
 ## 🧠 Como Funciona
 
@@ -58,6 +61,7 @@ O teste abrange 10 áreas principais da TI:
 3. Responda às 30 perguntas selecionando a opção que melhor te descreve
 4. Veja seus resultados e explore as informações detalhadas sobre cada área
 5. Salve ou compartilhe seus resultados
+6. Consulte o [Guia Financeiro e Ético](https://lucasdoreac.github.io/guia-financeiro-etico-computacao/) para informações sobre salários e considerações éticas
 
 ## 🧪 Local de Testes
 
@@ -78,6 +82,7 @@ Contribuições são bem-vindas! Você pode ajudar:
 - Atualizando informações sobre tecnologias e recursos
 - Melhorando o design e a experiência do usuário
 - Reportando bugs ou sugerindo melhorias
+- Atualizando informações financeiras e éticas
 
 Para contribuir:
 1. Faça um fork do projeto
@@ -93,6 +98,10 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ## 📧 Contato
 
 Para sugestões, dúvidas ou feedback, abra uma [issue](https://github.com/Lucasdoreac/teste-vocacional-computacao/issues) no GitHub.
+
+## 🔗 Projetos Relacionados
+
+- [Guia Financeiro e Ético para Carreiras em Computação](https://lucasdoreac.github.io/guia-financeiro-etico-computacao/) - Informações sobre salários, oportunidades de carreira e considerações éticas em cada área da TI.
 
 ---
 
