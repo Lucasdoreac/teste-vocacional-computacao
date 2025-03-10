@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Vocacional - Ciência da Computação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Teste Vocacional de Ciência da Computação</h1>
+            <p class="tagline">Descubra qual área da TI combina com seu perfil e habilidades</p>
+        </div>
+    </header>
+
+    <!-- Introdução -->
+    <section id="intro" class="section">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Perdido no mundo da Computação?</h2>
+                    <p>
+                        O Bacharelado em Ciência da Computação abre portas para dezenas de profissões diferentes na TI.
+                        Para alguém que está começando sem experiência prévia, pode ser difícil saber que caminho seguir.
+                    </p>
+                    <p>
+                        Este teste vocacional foi desenhado especialmente para <strong>calouros</strong> e iniciantes,
+                        considerando que você pode não ter experiência prévia com programação ou tecnologia avançada.
+                    </p>
+                    <p>
+                        <strong>Em 5-10 minutos</strong>, você receberá recomendações personalizadas de:
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Áreas da TI que combinam com seu perfil</li>
+                        <li><i class="fas fa-check"></i> Tecnologias atualizadas para começar a estudar</li>
+                        <li><i class="fas fa-check"></i> Recursos gratuitos para aprendizado</li>
+                        <li><i class="fas fa-check"></i> Projetos práticos para iniciantes</li>
+                    </ul>
+                </div>
+                <div class="intro-image">
+                    <img src="images/code-paths.svg" alt="Caminhos de carreira em TI">
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="start-test" class="btn btn-primary">
+                    <i class="fas fa-play"></i> Iniciar Teste Vocacional
+                </button>
+                <button id="show-areas" class="btn btn-secondary">
+                    <i class="fas fa-map"></i> Ver Áreas da Computação
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas da Computação (visível quando clicado) -->
+    <section id="areas-overview" class="section hidden">
+        <div class="container">
+            <h2>Principais Áreas da Ciência da Computação</h2>
+            <p class="section-description">
+                A TI é um campo amplo e em constante evolução. Conheça as principais áreas antes de fazer o teste:
+            </p>
+
+            <div class="areas-grid">
+                <div class="area-card" data-area="dev">
+                    <div class="area-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Desenvolvimento de Software</h3>
+                    <p>Criação de aplicativos, sites e sistemas. É o "coração" da programação.</p>
+                </div>
+                
+                <div class="area-card" data-area="ai">
+                    <div class="area-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Inteligência Artificial</h3>
+                    <p>Criação de sistemas que simulam inteligência humana e aprendem com dados.</p>
+                </div>
+                
+                <div class="area-card" data-area="security">
+                    <div class="area-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cibersegurança</h3>
+                    <p>Proteção de sistemas, redes e dados contra ameaças digitais.</p>
+                </div>
+                
+                <div class="area-card" data-area="data">
+                    <div class="area-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Banco de Dados</h3>
+                    <p>Organização, armazenamento e recuperação eficiente de informações.</p>
+                </div>
+                
+                <div class="area-card" data-area="networks">
+                    <div class="area-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Redes de Computadores</h3>
+                    <p>Infraestrutura que permite a comunicação entre dispositivos e sistemas.</p>
+                </div>
+                
+                <div class="area-card" data-area="engineering">
+                    <div class="area-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Engenharia de Software</h3>
+                    <p>Planejamento e arquitetura de sistemas complexos com qualidade.</p>
+                </div>
+                
+                <div class="area-card" data-area="datascience">
+                    <div class="area-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Análise de Dados</h3>
+                    <p>Extração de insights e padrões a partir de grandes volumes de dados.</p>
+                </div>
+                
+                <div class="area-card" data-area="ux">
+                    <div class="area-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>UX/UI Design</h3>
+                    <p>Design de interfaces e experiências que tornam a tecnologia acessível e agradável.</p>
+                </div>
+                
+                <div class="area-card" data-area="devops">
+                    <div class="area-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>DevOps</h3>
+                    <p>Integração entre desenvolvimento e operações para entregas rápidas e confiáveis.</p>
+                </div>
+                
+                <div class="area-card" data-area="cloud">
+                    <div class="area-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Computação em Nuvem</h3>
+                    <p>Implementação e gerenciamento de serviços baseados em nuvem.</p>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="back-to-intro" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Voltar
+                </button>
+                <button id="start-from-areas" class="btn btn-primary">
+                    <i class="fas fa-play"></i> Fazer o Teste
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teste (questões) -->
+    <section id="test" class="section hidden">
+        <div class="container">
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+                <p id="question-counter">Pergunta 1 de 30</p>
+            </div>
+
+            <div id="question-container">
+                <!-- Pergunta será inserida aqui dinamicamente -->
+            </div>
+
+            <div class="test-controls">
+                <button id="prev-question" class="btn btn-secondary" disabled>
+                    <i class="fas fa-arrow-left"></i> Anterior
+                </button>
+                <button id="next-question" class="btn btn-primary">
+                    Próxima <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados -->
+    <section id="results" class="section hidden">
+        <div class="container">
+            <h2>Seus Resultados</h2>
+            <p class="section-description">
+                Com base nas suas respostas, identificamos as áreas da TI que mais combinam com seu perfil:
+            </p>
+
+            <div class="results-content">
+                <div class="chart-container">
+                    <canvas id="results-chart"></canvas>
+                </div>
+
+                <div class="top-matches">
+                    <h3>Suas Principais Compatibilidades</h3>
+                    <div id="match-list">
+                        <!-- Inserido dinamicamente -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="detailed-results">
+                <!-- Áreas de compatibilidade detalhadas -->
+            </div>
+
+            <div class="action-buttons">
+                <button id="restart-test" class="btn btn-secondary">
+                    <i class="fas fa-redo"></i> Refazer Teste
+                </button>
+                <button id="save-results" class="btn btn-primary">
+                    <i class="fas fa-download"></i> Salvar Resultados
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Área de Detalhe (aberta quando clicada) -->
+    <section id="area-detail" class="section hidden">
+        <div class="container">
+            <h2 id="area-detail-title"></h2>
+            <div class="area-detail-content">
+                <div class="area-detail-header">
+                    <div class="compatibility">
+                        <span id="compatibility-percentage">0%</span>
+                        <span class="label">Compatibilidade</span>
+                    </div>
+                    <div class="area-overview">
+                        <p id="area-description"></p>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h3><i class="fas fa-user-check"></i> Perfil e Atividades</h3>
+                    <div id="profile-description" class="detail-content"></div>
+                </div>
+
+                <div class="detail-section">
+                    <h3><i class="fas fa-laptop-code"></i> Linguagens e Tecnologias (2025)</h3>
+                    <div id="tech-description" class="detail-content"></div>
+                    
+                    <div class="tech-cards" id="tech-cards">
+                        <!-- Tecnologias serão inseridas dinamicamente -->
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h3><i class="fas fa-tools"></i> Ferramentas e Metodologias</h3>
+                    <div id="tools-description" class="detail-content"></div>
+                </div>
+
+                <div class="detail-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Recursos para Iniciantes</h3>
+                    <div id="learning-resources" class="detail-content"></div>
+                    
+                    <div class="resource-links" id="resource-links">
+                        <!-- Links de recursos serão inseridos dinamicamente -->
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h3><i class="fas fa-project-diagram"></i> Projeto Prático para Começar</h3>
+                    <div id="starter-project" class="detail-content"></div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="back-to-results" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Voltar aos Resultados
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Teste Vocacional de Ciência da Computação</p>
+            <p>Criado para ajudar calouros a encontrar seu caminho na TI</p>
+            <p>
+                <a href="https://github.com/Lucasdoreac/teste-vocacional-computacao" target="_blank">
+                    <i class="fab fa-github"></i> Veja no GitHub
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/areas.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>
